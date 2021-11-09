@@ -23,6 +23,7 @@ namespace CarLotSimulator
             CarLot parkAndFly = new CarLot();
 
             var car1 = new Car();
+            Console.WriteLine($"Car # {CarLot.numberOfCars} was just created.");
             car1.Year = 2021;
             car1.Make = "Honda";
             car1.Model = "Pilot";
@@ -33,6 +34,7 @@ namespace CarLotSimulator
             parkAndFly.CarList.Add(car1);
 
             var car2 = new Car();
+            Console.WriteLine($"Car # {CarLot.numberOfCars} was just created.");
             car2.Year = 2022;
             car2.Make = "Accura";
             car2.Model = "DX";
@@ -43,6 +45,7 @@ namespace CarLotSimulator
             parkAndFly.CarList.Add(car2);
 
             var car3 = new Car();
+            Console.WriteLine($"Car # {CarLot.numberOfCars} was just created.");
             car3.Year = 2019;
             car3.Make = "Kia";
             car3.Model = "Soul";
@@ -78,8 +81,13 @@ namespace CarLotSimulator
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
-            Car car1Type2 = new Car() { Year = 2021, Make = "Honda", Model = "Pilot", EngineNoise = "GRRRR", HonkNoise = "HONK", IsDriveable = true };
-            Car car1Type3 = new Car(2021, "Honda", "Pilot", "GRRRR", "HONK", true );
+            Car car1Type2 = new Car() { Year = 1953, Make = "Ford", Model = "Thunderbird", EngineNoise = "GRRRR", HonkNoise = "HONK", IsDriveable = true };
+            Console.WriteLine($"Car # {CarLot.numberOfCars} was just created.");
+            parkAndFly.CarList.Add(car1Type2);
+
+            Car car1Type3 = new Car(1963, "Cheve", "Corvette", "GRRRR", "HONK", true );
+            Console.WriteLine($"Car # {CarLot.numberOfCars} was just created.");
+            parkAndFly.CarList.Add(car1Type3);
 
 
             //*************BONUS X 2*************//
