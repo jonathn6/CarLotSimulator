@@ -36,6 +36,8 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = HonkNoise;
             IsDriveable = IsDriveable;
+
+            CarLot.numberOfCars++;
         }
     }
 }
